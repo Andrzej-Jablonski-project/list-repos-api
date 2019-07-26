@@ -6,11 +6,26 @@ html {
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
 body {
   color: $yellow;
   background: $violet;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.repos {
+  width: 800px;
+
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    list-style: none;
+  }
 }
